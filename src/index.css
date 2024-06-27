@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(39, 38, 38);
+}
+
+.quoteFont {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.iconButton {
+    border: 3px solid purple;
+    width: fit-content;
+    border-radius: 50%;
+    color: purple;
+    cursor: pointer;
+}
+
+.iconButton:hover {
+    border: 3px solid rgb(190, 14, 190);
+    color: rgb(190, 14, 190);
+}
+
+.changeQuote{
+    background: purple;
+    margin-top: 0.75rem;
+    color: white;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+}
+
+.changeQuote:hover {
+    background: rgb(190, 14, 190);
+    transition: ease-in-out;
+    
+
+}
+
+/* set width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* set the scrollbar path or track*/
+::-webkit-scrollbar-track{
+    background: purple;
+    border-radius: 5px;
+}
+
+
+/* set the scrollbar color */
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: green;
+}
