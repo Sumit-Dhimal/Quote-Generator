@@ -53,6 +53,14 @@ export default function QuoteGenerator() {
             })
     }
 
+    // text to speech
+    const textSpeak = () => {
+        if(quote != "") {
+            const speech = new SpeechSynthesisUtterance(quote);
+            window.speechSynthesis.speak(speech);
+        }
+    }
+
 
 
     // for loading screen
@@ -88,7 +96,7 @@ export default function QuoteGenerator() {
         {/* icons */}
         <div className="flex justify-between mt-4">
             <div className="flex gap-2">
-                <span className="iconButton px-3 py-2.5">
+                <span className="iconButton px-3 py-2.5" onClick={textSpeak}>
                     <FontAwesomeIcon icon={faVolumeHigh} />
                 </span>
                 <span className="iconButton px-4 py-2" onClick={copyText}>
